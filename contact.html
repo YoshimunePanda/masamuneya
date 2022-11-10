@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まさむね屋/お問合せ</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/e7afc9d33e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- headerLogoUl -->
+    <!-- パソコン表示 -->
+    <header class="headerLogoUlPc">
+        <h1 class="headerLogoUlPc__logo">
+            <img class="headerLogoUlPc__logo__img" src="./images/logo.png" alt="店舗ロゴ" />
+        </h1>
+        <ul class="headerLogoUlPc__ul">
+            <li class="headerLogoUlPc__ul__li"><a href="index.html">トップページ</a></li>
+            <li class="headerLogoUlPc__ul__li"><a href="cooking.html">お料理</a></li>
+            <li class="headerLogoUlPc__ul__li"><a href="obsession.html">こだわり</a></li>
+            <li class="headerLogoUlPc__ul__li"><a href="info.html">店舗案内</a></li>
+            <li class="headerLogoUlPc__ul__li"><a href="contact.html">お問合せ</a></li>
+        </ul>
+    </header>
+    <!-- スマホ表示 -->
+    <header class="headerLogoUlSp">
+        <div class="headerLogoUlSp__flex">
+            <h1 class="headerLogoUlSp__flex__logo">
+                <img class="headerLogoUlSp__flex__logo__img" src="./images/logo.png" alt="店舗ロゴ" />
+            </h1>
+            <div class="headerLogoUlSp__flex__icon">
+                <i class="headerLogoUlSp__flex__icon__img fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <ul class="headerLogoUlSp__ham is-active">
+            <li class="headerLogoUlSp__ham__li"><a href="index.html">トップページ</a></li>
+            <li class="headerLogoUlSp__ham__li"><a href="cooking.html">お料理</a></li>
+            <li class="headerLogoUlSp__ham__li"><a href="info.html">店舗案内</a></li>
+            <li class="headerLogoUlSp__ham__li"><a href="contact.html">お問合せ</a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- mainText -->
+        <section class="mainText">
+            <img class="mainText__img" src="./images/sashimiSub.png" alt="タイの姿造り">
+            <p class="mainText__text">お問合せ</p>
+        </section>
+        <section class="width80">
+            <!-- titleBackimg -->
+            <div class="titleBackimg">
+                <p class="titleBackimg__title mt10vw">
+                    お問合せ
+                </p>
+            </div>
+            <p class="text">
+                「まさむね屋」ではメールとお電話でのお問合せを承っております。<br>
+                メールでのお問い合わせは、ご返信までお時間がかかる場合もございますので、
+                お急ぎの方は、お電話にて直接お問い合わせ下さい。<br><br>
+                電話番号　06-6666-1234
+            </p>
+        </section>
+        <!-- form -->
+        <section class="form">
+            <form method="POST" action="#" class="form__area">
+                <div class="form__area__flex">
+                    <div class="form__area__flex__left">
+                        <p class="form__area__flex__left__label">お名前</p>
+                        <p class="form__area__flex__left__mandatory">※必須</p>
+                    </div>
+                    <div class="form__area__flex__right">
+                        <input type="text" name="username" id="username" class="form__area__flex__right__text"
+                            placeholder="まさむね屋"/>
+                    </div>
+                </div>
+                <div class="form__area__flex">
+                    <div class="form__area__flex__left">
+                        <p class="form__area__flex__left__label">フリガナ</p>
+                        <p class="form__area__flex__left__mandatory">※必須</p>
+                    </div>
+                    <div class="form__area__flex__right">
+                        <input type="text" name="userkana" id="userkana" class="form__area__flex__right__text"
+                            placeholder="マサムネヤ"/>
+                    </div>
+                </div>
+                <div class="form__area__flex">
+                    <div class="form__area__flex__left">
+                        <p class="form__area__flex__left__label">電話番号</p>
+                        <p class="form__area__flex__left__mandatory">※必須</p>
+                    </div>
+                    <div class="form__area__flex__right">
+                        <input type="text" name="tel" id="tel" class="form__area__flex__right__text"
+                            placeholder="06-6666-1234"/>
+                    </div>
+                </div>
+                <div class="form__area__flex">
+                    <div class="form__area__flex__left">
+                        <p class="form__area__flex__left__label">メールアドレス</p>
+                        <p class="form__area__flex__left__mandatory">任意</p>
+                    </div>
+                    <div class="form__area__flex__right">
+                        <input type="text" name="email" id="email" class="form__area__flex__right__text"
+                            placeholder="masamuneya@example.com"/>
+                    </div>
+                </div>
+                <div class="form__area__flex">
+                    <div class="form__area__flex__left form__area__flex__left--last">
+                        <p class="form__area__flex__left__label">お問合せ内容</p>
+                        <p class="form__area__flex__left__mandatory">※必須</p>
+                    </div>
+                    <div class="form__area__flex__right form__area__flex__right--last">
+                        <textarea type="text" name="email" id="email" class="form__area__flex__right__text form__area__flex__right__text--area"
+                            placeholder="お問い合わせ内容をご記載ください">
+                        </textarea>
+                    </div>
+                </div>
+            </form>
+            <!-- privacy -->
+            <form class="privacy">
+                <div class="privacy__check">
+                    <input type="checkbox" name="privacy" id="privacy" value="privacy" class="privacy__check__box">
+                    <label class="privacy__check__text text">プライバシーポリシーを確認し、内容に同意します。</label>
+                </div>
+                <div class="privacy__button">
+                    <button class="privacy__button__submit">送信する</button>
+                </div>
+            </form>
+        </section>
+        <section class="width80">
+            <!-- titleBackimg -->
+            <div class="titleBackimg">
+                <p class="titleBackimg__title mt10vw">
+                    プライバシーポリシー
+                </p>
+            </div>
+            <p class="text">
+                当サイトは、お客様の個人情報について、お客様の承諾が無い限り第三者に開示、提供を一切いたしません。<br>
+        お客様から個人情報をご提供していただき、お客様へのサービスにご利用させていただく場合がありますが、その目的以外には利用いたしません。<br>
+        ご提供いただいた個人情報につきましては管理責任者を置き、適切な管理を行っております。
+            </p>
+        </section>
+        <!-- logoTextBackimg -->
+        <section class="logoTextBackimg">
+            <div class="logoTextBackimg__logo">
+                <img class="logoTextBackimg__logo__img" src="./images/logo.png" alt="店舗ロゴ">                
+            </div>
+            <div class="logoTextBackimg__textBox">
+                <p class="logoTextBackimg__textBox__text">〒540-0002　大阪市中央区大阪城1-1</p>
+                <p class="logoTextBackimg__textBox__text">電話番号　06-6666-1234</p>
+            </div>
+        </section>
+        
+
+
+    </main>
+    <!-- スクリプト -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD8Dme9eYO2JH9wAPBTjJB7Icq0NZY4f0&callback=initMap&libraries=&v=weekly"></script>
+</body>
+
+</html>
